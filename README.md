@@ -54,11 +54,11 @@ Object Oriented Programming
 
 Memory Management
 
-5. In Renderer::~Renderer() destructor added in TTF_Quit() to propery clean up SDL2_ttf init
-6. In Controller::handleInput I pass in references to both player1 and player 2 so they can be modified directly
+7. In Renderer::~Renderer() destructor added in TTF_Quit() to propery clean up SDL2_ttf init
+8. In Controller::handleInput I pass in references to both player1 and player 2 so they can be modified directly
 
 Loops, Function, I/O
 
-7. Project demonstrates an understanding of C++ functions and control structures. Added new while loop in main.cpp for handling the start screen before the main game loop runs.
-5. In main.cpp print game results to the terminal to show the winner and the size of the winner
+9. Project demonstrates an understanding of C++ functions and control structures. Added new while loop in main.cpp for handling the start screen before the main game loop runs.
+10. In main.cpp print game results to the terminal to show the winner and the size of the winner
   
