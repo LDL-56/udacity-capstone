@@ -40,3 +40,25 @@ I built this in Windows, and I'm not sure if it will work in a Linux environment
 4. In the build directory, run `make`
 5. Run `./TronGame` to start the program
     * Note: In my environment the SDL2.dll and SDL2_ttf.dll files are needed in the run directory for the program to start. This should be take care of in step 3
+
+## Rubric Points
+Object Oriented Programming
+
+  1. Added new methods to player.h and renderer.h (lines 18/19 StartScreen and RenderText)
+  2. Utilized OOP with a two player game. Allows samme functions to be used on both players which are initalized at the same time
+  3. Classes use appropriate public/private members. See player.h for member variables added to public (speed_boost, boost_duration...)
+  4. In game.h added private getters and setters for the winner of the game
+  5. In game.cpp Game::Game utilize the member intialization list to set private member variables including player1, player2, and initializing the winner
+  6. Classed encaspsulate behavior. The player class added lots of member variables that define everything about the player including starting direction, speed, boost speed, boost duration. 
+
+
+Memory Management
+
+5. In Renderer::~Renderer() destructor added in TTF_Quit() to propery clean up SDL2_ttf init
+6. In Controller::handleInput I pass in references to both player1 and player 2 so they can be modified directly
+
+Loops, Function, I/O
+
+7. Project demonstrates an understanding of C++ functions and control structures. Added new while loop in main.cpp for handling the start screen before the main game loop runs.
+5. In main.cpp print game results to the terminal to show the winner and the size of the winner
+  
